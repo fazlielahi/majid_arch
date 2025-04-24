@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+  }
+  header {
+    background: url('https://via.placeholder.com/1600x600?text=Architecture+Hero+Image') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+
+  /* Tab Buttons */
+.services-tabs {
+text-align: center;
+margin-bottom: 20px;
+margin-top: 79px;
+}
+.tab-btn {
+background: #f0f0f0;
+border: none;
+padding: 10px 20px;
+margin: 0 10px;
+font-size: 1.1rem;
+cursor: pointer;
+border-radius: 4px;
+transition: background 0.3s ease;
+}
+.tab-btn.active, .tab-btn:hover {
+background: #007bff;
+color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+display: none;
+animation: fadeIn 0.5s ease-in-out;
+}
+.tab-content.active {
+display: block;
+}
+
+/* Content Container */
+.content-container {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 20px;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.content-container img {
+max-width: 100%;
+width: 500px;
+border-radius: 8px;
+object-fit: cover;
+}
+.text-content {
+flex: 1;
+min-width: 280px;
+}
+.text-content h3 {
+margin-top: 0;
+color: #007bff;
+}
+.text-content p {
+line-height: 1.6;
+color: #555;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.content-container {
+  flex-direction: column;
+}
+.content-container img {
+  width: 100%;
+}
+}
+
+
+  .intro {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  .intro p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  /* Service Grid & Card Styles */
+.services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+max-width: 1200px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+.service-card {
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+margin-top: -15px;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+font-size: 3rem;
+color: #007bff;
+margin-bottom: 15px;
+}
+
+/* Modal Overlay Styles */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.7);
+display: none;
+align-items: center;
+justify-content: center;
+padding: 20px;
+z-index: 1000;
+}
+
+.modal-overlay.active {
+display: flex;
+}
+
+.modal-container {
+background: #fff;
+border-radius: 8px;
+max-width: 700px;
+width: 100%;
+padding: 30px;
+position: relative;
+animation: fadeIn 0.4s ease-out;
+}
+
+.modal-close {
+position: absolute;
+top: 15px;
+right: 20px;
+font-size: 1.5rem;
+color: #333;
+cursor: pointer;
+}
+
+.services-btn{
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+
+.modal-content h3 {
+margin-top: 0;
+color: #007bff;
+}
+
+.modal-content p {
+font-size: 1rem;
+color: #555;
+line-height: 1.6;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #ddd;
+  }
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .intro h2 {
+      font-size: 2rem;
+    }
+
+    .tab-btn {
+      display: block !important;
+      margin: 5px 69px !important;
+    }
+
+    .service-card {
+      margin: 5px 0;
+      border-radius: 0;
+    }
+
+    .services {
+      padding: 0;
+
+    }
+
+  }

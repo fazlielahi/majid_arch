@@ -1,0 +1,510 @@
+/* About Section */
+.about-section {
+    background: #f8f9fa;
+    padding: 80px 20px;
+    color: #333;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .about-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .about-content {
+    flex: 1 1 400px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #374c5e;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+ /* Experience Section */
+.experience-section {
+    background: #fff;
+    padding: 80px 20px;
+    min-height: 400px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #374c5e;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 216px;
+    height: 4px;
+    background: #37c74a;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  .experience-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* General Card Styles */
+  .card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    background: #37c74a;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card-header img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .card-header .company-name {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .card-content {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #374c5e;
+  }
+  
+  .card-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .card-content h4 span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .card-content .duration,
+  .card-content .location {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #888;
+  }
+  
+  .card-content .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Unique Styles for Current Experience */
+  .current-experience {
+    background: #e1f5e5; /* Light green background for the current experience */
+    border-left: 5px solid #37c74a; /* Bold green border to highlight the card */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2); /* Strong shadow for emphasis */
+  }
+  
+  .current-experience .card-header {
+    background: #37c74a; /* Darker green to emphasize the header */
+    
+  }
+  
+  .current-experience .card-header span {
+    color: #fff; /* Darker green to emphasize the header */
+    
+  }
+  
+  .current-experience .card-content h3 {
+    color: #37c74a; /* Dark green text color for the job title */
+  }
+  
+  .current-experience .card-content .company-name {
+    font-weight: bold;
+    color: #37c74a;
+  }
+  
+  .current-experience .card-content h4 {
+    font-weight: bold;
+    color: #374c5e; /* Darker text for contrast */
+  }
+  
+  .current-experience .card-content .duration,
+  .current-experience .card-content .location {
+    color: #333; /* Darker text for clarity */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  
+  /* Skills Section */
+.skills-section {
+    background: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+    clear: both;
+  }
+  
+  .skills-section .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #374c5e;
+    position: relative;
+  }
+  
+  .skills-section .section-title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #37c74a;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  /* Two Columns for Large Screens */
+  @media (min-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Individual Skill */
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #374c5e;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .experience-section {
+        order: 2; /* Make sure Experience comes first */
+    }
+    .skills-section {
+        order: 3; /* Skills should come after Experience */
+    }
+}
+
+/* About Section */
+.about-section {
+    background: #f8f9fa;
+    padding: 80px 20px;
+    color: #333;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .about-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .about-content {
+    flex: 1 1 400px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #374c5e;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+ /* Experience Section */
+.experience-section {
+    background: #fff;
+    padding: 80px 20px;
+    min-height: 400px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #374c5e;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 216px;
+    height: 4px;
+    background: #37c74a;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  .experience-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* General Card Styles */
+  .card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    background: #37c74a;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card-header img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .card-header .company-name {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .card-content {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #374c5e;
+  }
+  
+  .card-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .card-content h4 span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .card-content .duration,
+  .card-content .location {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #888;
+  }
+  
+  .card-content .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Unique Styles for Current Experience */
+  .current-experience {
+    background: #e1f5e5; /* Light green background for the current experience */
+    border-left: 5px solid #37c74a; /* Bold green border to highlight the card */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2); /* Strong shadow for emphasis */
+  }
+  
+  .current-experience .card-header {
+    background: #37c74a; /* Darker green to emphasize the header */
+    
+  }
+  
+  .current-experience .card-header span {
+    color: #fff; /* Darker green to emphasize the header */
+    
+  }
+  
+  .current-experience .card-content h3 {
+    color: #37c74a; /* Dark green text color for the job title */
+  }
+  
+  .current-experience .card-content .company-name {
+    font-weight: bold;
+    color: #37c74a;
+  }
+  
+  .current-experience .card-content h4 {
+    font-weight: bold;
+    color: #374c5e; /* Darker text for contrast */
+  }
+  
+  .current-experience .card-content .duration,
+  .current-experience .card-content .location {
+    color: #333; /* Darker text for clarity */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  
+  /* Skills Section */
+.skills-section {
+    background: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+    clear: both;
+  }
+  
+  .skills-section .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #374c5e;
+    position: relative;
+  }
+  
+  .skills-section .section-title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #37c74a;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  /* Two Columns for Large Screens */
+  @media (min-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Individual Skill */
+  .skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #374c5e;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .experience-section {
+        order: 2; /* Make sure Experience comes first */
+    }
+    .skills-section {
+        order: 3; /* Skills should come after Experience */
+    }
+}
+

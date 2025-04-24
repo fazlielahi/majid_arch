@@ -1,0 +1,31 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Redirect www to non-www (optional)
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Set default index file
+DirectoryIndex index.php
+
+# Deny access to sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|conf|env)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Error handling
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+# Set UTF-8 encoding
+AddDefaultCharset UTF-8
+
+# Prevent directory listing
+Options -Indexes
+
+# Increase PHP limits (if host allows)
+# php_value upload_max_filesize 10M
+# php_value post_max_size 20M
+# php_value max_execution_time 300
+# php_value max_input_time 300
