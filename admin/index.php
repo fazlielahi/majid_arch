@@ -1,3 +1,14 @@
+<?php
+
+	//ADMIN PANEL Login PAGE
+
+	session_start();
+	include("../inc/database.php");
+	include("../inc/functions.php"); /* functions public view */
+	include("../inc/functions-general.php");
+	
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,6 +78,8 @@
       text-align: center;
       width: 100%;
       max-width: 400px;
+      position: relative;
+      padding-top: 10px;
     }
     /* Form Title */
     h2 {
@@ -169,6 +182,7 @@
 <body>
   
 <div class="login-container">
+<p style="text-align:center;  "><?php echo  show_msg() ?></p>
   <form class="login-form" action="login-process.php" method="post">
     <h2>Welcome Back</h2>
     <p>Login to your account</p>

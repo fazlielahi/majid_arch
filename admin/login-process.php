@@ -1,51 +1,51 @@
 <?php
 
-    session_start();
+	//ADMIN PANEL LOGIN PROCESS PAGE
+
+	session_start();
 	include("../inc/database.php");
 	include("../inc/functions.php"); /* functions public view */
+	include("../inc/functions-general.php");
+		
+?>
 
-    if(!isset($_POST['email']))
+<?php
+
+	if(!isset($_POST['email']))
 	{
 		die("Error: Invalid Access");
 	}else
 	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		//$rememberme = $_POST['rememberme'];
+		$rememberme = $_POST['rememberme'];
 	}
 	
-	$users_query = get_users("login_info", "", $email, $password);
+	$members_query = get_users("login_info", "", $email, $password);
 	
 	//die(mysqli_error($connection));
-	$users = mysqli_fetch_assoc($users_query);
-	$total = mysqli_num_rows($users_query);
+	$members = mysqli_fetch_assoc($members_query);
+	$total = mysqli_num_rows($members_query);
 	
-	if($total > 0) 
+	if($total > 0) // type '1' means Administrator
 	{
-		$_SESSION['member_email'] = $users['email'];
-		//$_SESSION['member_id'] = $users['id'];
+		$_SESSION['member_email'] = $members['email'];
 		
-		/*if($rememberme == 'yes')
+		if($rememberme == 'yes')
 		{
-			setcookie("member_id", $email, time() + 3600 * 12);
+			setcookie("member_email", $email, time() + 3600 * 12);
 		}else{
-			setcookie("member_id", $email, time() + 3600);
-		}*/
+			setcookie("member_email", $email, time() + 3600);
+		}
 		
-		// if($users['role'] == 1) // 1 defines Administrator
-		// {
-			//redirect("admin/dashboard.php", "successfully Loged in", "success");
-            header("location: dashboard.php?msg=you are loged in");
+		
+			redirect("dashboard.php", "successfully Loged in", "success");
 			
-		// }else if($users['role'] == 0) // 1 defines Reporter
-		// {
-		// 	redirect("reporter/news.php", "successfully Loged in", "success");
-		// }
+		
 		
 	}else
 	{
-		// redirect("index.php", "Invalid login info ", "error");
-        header("location: login.php?msg=Error: Invalid login info");
+		redirect("index.php", "Invalid login info ", "error");
 	}
 	
 	

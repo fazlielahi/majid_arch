@@ -1,7 +1,18 @@
 <?php
-session_start();
-include("../inc/database.php");
-include("inc-admin/functions.php");
+
+	//ADMIN PANEL Login PAGE
+
+	session_start();
+	include("../inc/database.php");
+	include("../inc/functions.php"); /* functions public view */
+	include("../inc/functions-general.php");
+	$dir_images = "../images/";
+	
+	include("inc-admin/functions.php"); /* functions admin panel */
+	
+?>
+
+<?php
 
 $services = get_services("all_services", "");
 $services_category = getservices_categ("all");
@@ -188,6 +199,7 @@ if ($action == 'categ_update') {
   <!-- go back to pubic site -->
    <div class="web">
    <a href="../index.php" class='web'>Back to web 🌐</a>
+   <a href="logout.php" class='web'>🔴 Logout</a>
    </div>
 
   <?php echo $service_edit_form ?>
