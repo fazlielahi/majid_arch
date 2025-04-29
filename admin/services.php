@@ -198,8 +198,8 @@ if ($action == 'categ_update') {
 
   <!-- go back to pubic site -->
    <div class="web">
-   <a href="../index.php" class='web'>Back to web 🌐</a>
-   <a href="logout.php" class='web'>🔴 Logout</a>
+   <a href="../index.php" class='btn btn-outline-primary btn-sm web'>Back to web 🌐</a>
+   <a href="logout.php" class='btn btn-outline-danger btn-sm web'>Logout </a>
    </div>
 
   <?php echo $service_edit_form ?>
@@ -324,14 +324,16 @@ if ($action == 'categ_update') {
 
     const editmodal = document.querySelector(".edit-form");
     const openBtn = document.getElementById("openModalBtn");
-    const closeBtn = document.querySelector(".edtCloseBtn");
+    
+
+    function edtClose(){
+      const editmodal = document.querySelector(".edit-form");
+      editmodal.style.display = "none";
+      
+    }
 
     openBtn.onclick = () => editmodal.style.display = "block";
-    closeBtn.onclick = () => editmodal.style.display = "none";
 
-    window.onclick = (e) => {
-      if (e.target === editmodal) editmodal.style.display = "none";
-    };
   </script>
 
 </body>

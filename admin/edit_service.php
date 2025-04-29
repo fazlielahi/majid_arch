@@ -27,7 +27,7 @@ $service = mysqli_fetch_assoc($query);
  <div class="edit-form">
     
     <form action="services.php" method="POST" enctype="multipart/form-data" id="editForm">
-    <span class="edtCloseBtn">&times;</span>
+    <span onclick="edtClose()" class="edtCloseBtn">&times;</span>
     <h2>Edit Service</h2>
         <label>Category</label>
         <select name="category_id" required class="form-control">
