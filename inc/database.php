@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "arch";
+$servername = "sql109.infinityfree.com";
+$username = "if0_38647626";
+$password = "miamajd787";
+$database = "if0_38647626_arch";
 
 // Enable error display
 ini_set('display_errors', 1);
