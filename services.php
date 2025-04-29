@@ -159,6 +159,10 @@
       </div>
       
   </div>
+
+  <div class='services-paragraph'>
+    <p>Our designs speak clearly and loudly about us, defines a pretty side of our  clients desired art translated by our professional designers.To provide quality design services in both INTERIORS and ARCHITECTURE for corporate, institutional and International Clients. These quality driven design services began with the corporate and residential markets and have further developed to include the hospitality Restaurants and retail markets.</p>
+  </div>
   
   
   <footer>
