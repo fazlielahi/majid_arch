@@ -290,6 +290,7 @@ h2 {
   .contact-container input{
     border-radius: 0;
     margin: 10px;
+    margin: 95%;
   }
   .contact-info div, .contact-form button {
     border-radius: 0;

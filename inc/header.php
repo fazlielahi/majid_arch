@@ -1,7 +1,7 @@
   <!-- Header -->
   <div class="header">
     <div class="logo">
-      <img src="images/ages-logo.jpg" alt="Logo" /> <!-- Replace with your logo -->
+      <img src="images/logo.png" alt="Logo" /> <!-- Replace with your logo -->
     </div>
     <nav class="nav-menu" id="nav-menu">
       <a href="index.php">Home</a>

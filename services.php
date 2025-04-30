@@ -50,7 +50,7 @@
         if (is_file('admin/images/' . $service['image'])) {
           $services_cards .= "  <img src='admin/images/$service[image]' alt='$service[title]' width='50'>";
           }else{
-            $services_cards .= "<i class='fas fa-drafting-compass'></i>";
+            $services_cards .= " <img src='images/default-services.png' width='50'>";
           }
           $services_cards .=  "
                         </div>

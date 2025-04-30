@@ -92,7 +92,8 @@
     /* Banner */
     .banner {
       height: 100%;
-      /* background-image: url('./images/banner-main-page.jpg'); Replace with your image */
+      background-image: url('./images/banner.jpg'); 
+      background-size: 100%;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -102,17 +103,22 @@
       text-align: center;
     }
     .banner-text {
-      margin: 0 11%;
-      text-align: left;
+      margin: 0 auto;
+      text-align: center;
     }
     .banner-text h4 {
       margin-left: 5px;
+      background: #ffffff6e;
+      padding: 10px 5px;
     }
     .banner-text .home-name {
       color: rgb(55, 199, 74);
       font-size: 70px;
       font-weight: 700;
       letter-spacing: 1px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background: #ffffff6e;
+    
     }
     /* Sections */
     .section {

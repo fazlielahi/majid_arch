@@ -33,7 +33,7 @@ if (!empty($services)) {
   foreach ($services as $service) {
     $service_status = ($service['status'] == 1) ? "<span style='font-size: 14px; color:lightgreen'> Enabled </span>" : "<span style='font-size: 14px; color:lightgray'> Disabled </span>";
     $id = $service['id'];
-    $service_list .= "<tr>";
+    $service_list .= "<tr>"; 
     $service_list .= "<td>" . $i . "</td>";
     $service_list .= "<td>" . htmlspecialchars($service['title']) . "</td>";
     $service_list .= is_file("./images/" . htmlspecialchars($service['image']))
