@@ -102,24 +102,7 @@
       justify-content: flex-start;
       text-align: center;
     }
-    .banner-text {
-      margin: 0 auto;
-      text-align: center;
-    }
-    .banner-text h4 {
-      margin-left: 5px;
-      background: #ffffff6e;
-      padding: 10px 5px;
-    }
-    .banner-text .home-name {
-      color: rgb(55, 199, 74);
-      font-size: 70px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      background: #ffffff6e;
-    
-    }
+
     /* Sections */
     .section {
       padding: 100px 20px;
@@ -152,19 +135,7 @@
 
   <!-- Banner -->
   <div class="banner">
-    <div class="banner-text">
-      <h1 class="home-name">
-        Mian Majid<span style="color: #222;"> khan</span>
-      </h1>
-      <h4 class="cd-headline clip home-headline">
-        I'm a
-        <span class="cd-words-wrapper single-headline">
-          <b class="is-visible">Architect</b><b>designer</b>
-        </span>
-        <br>
-        <a href="#about" class="about-btn">About me</a>
-      </h4>
-    </div>
+   
   </div>
 
   <!-- About Section -->
@@ -178,52 +149,15 @@
         <p>
           With over three years of hands-on experience in architectural design, my journey blends creativity with technical precision. As a full‑time Architect at AGES, I push the boundaries of design through innovative projects and on‑site execution. My tenure at Architects Inn in Lahore sharpened my skills with cutting‑edge tools like Lumion, empowering us to transform spaces into inspiring works of art. My passion for design drives us to create functional, modern, and timeless environments.
         </p>
+        <a href="images/majid.cv.zip">Download my cv</a>
       </div>
     </div>
   </div>
   
- <!-- Experience Section -->
-<div id="experience" class="section experience-section">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="experience-cards">
-        <!-- Card 1 (Current Experience) -->
-        <div class="card current-experience">
-          <div class="card-header">
-            <img src="images/ages-logo.jpg" alt="AGES Logo">
-            <span class="company-name">AGES</span>
-          </div>
-          <div class="card-content">
-            <h3>Architect</h3>
-            <h4><span>· Full-time</span></h4>
-            <p class="duration">Nov 2021 - Present · 3 yrs 5 mos</p>
-            <p class="location">On-site</p>
-            <p class="description">
-              Worked as an architectural designer, blending innovation with practical on‑site design to deliver inspiring and functional projects.
-            </p>
-          </div>
-        </div>
-  
-        <!-- Card 2 (Previous Experience) -->
-        <div class="card">
-          <div class="card-header">
-            <img src="images/default-logo.jpg" alt="Architects Inn Logo">
-            <span class="company-name">Architects Inn</span>
-          </div>
-          <div class="card-content">
-            <h3>Assistant Architect</h3>
-            <h4><span>· Full-time</span></h4>
-            <p class="duration">Nov 2021 - Dec 2024 · 3 yrs 2 mos</p>
-            <p class="location">Lahore, Punjab, Pakistan</p>
-            <p class="description">
-              Enhanced design capabilities using advanced visualization tools like Lumion while actively contributing to on‑site architectural projects.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+  <!-- Experience Section -->
+
+  <?php include('experience.php') ?>  
+
   <!-- Skills Section -->
 <div id="skills" class="skills-section">
     <div class="container">

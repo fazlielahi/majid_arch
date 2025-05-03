@@ -10,7 +10,7 @@
             //die(var_dump($id)); 
 		if($action == 'Create Service')
 		{
-			echo $sql = "INSERT INTO services
+			 $sql = "INSERT INTO services
 					SET 
 					title = '$title',
 					text = '$text',
@@ -78,6 +78,72 @@
 		
 	}
 }
+
+// experiece crud
+
+ // 	services CRUD queries
+	// -----------------------------------
+	
+	function crud_experiences(
+		$action = null,
+		$company = null,
+		$job_title = null,
+		$company_logo = null,
+		$location = null,
+		$start_date = null,
+		$end_date = null,
+		$text = null,
+		$status = null,
+		$id = null
+	) {
+		global $conn;
+	
+		if ($action == 'Add experience') {
+			$sql = "INSERT INTO experience SET 
+				company = '$company',
+				job_title = '$job_title',
+				company_logo = '$company_logo',
+				location = '$location',
+				start_date = '$start_date',
+				end_date = '$end_date',
+				text = '$text'
+			";
+	
+			$services_query = mysqli_query($conn, $sql);
+			return $services_query;
+
+		}else if($action == 'exp_update')
+		{
+				$sql = "UPDATE experience SET 
+				company = '$company',
+				job_title = '$job_title',
+				company_logo = '$company_logo',
+				location = '$location',
+				start_date = '$start_date',
+				end_date = '$end_date',
+				text = '$text',
+				status = '$status'
+					
+				WHERE
+				id = '$id'
+			";
+			
+			$sevices_query = mysqli_query($conn, $sql);
+			return $sevices_query;
+			
+		}else if($action == 'delete')
+		{
+        //    die(var_dump($id));
+			 $sql = "DELETE FROM experience
+					
+						WHERE
+						id = '$id'
+			";
+			
+			$sevices_query = mysqli_query($conn, $sql);
+			return $sevices_query;
+		}
+	}
 	
 	
 

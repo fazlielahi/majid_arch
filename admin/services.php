@@ -42,7 +42,7 @@ if (!empty($services)) {
     $service_list .= "<td>" . $service_status . "</td>";
     $service_list .= "<td class='action'>";
     $service_list .= "<a href='services.php?edit_id=" . $service['id'] . "'>
-    <i class='fa-solid fa-pen-to-square fa-lg mx-4' style='color: #0d4c7d;'></i></a>";
+    <i class='fa-solid fa-pen-to-square fa-lg mx-4' style='color: #0d4c7d;'>edit</i></a>";
     $service_list .= "<a href='#' onclick=\"openModal('delete', " . $service['id'] . ")\"><i class='fa-solid fa-trash-can fa-lg' style='color: #5c0000;'></i></a>";
 
     $service_list .= "</td>";

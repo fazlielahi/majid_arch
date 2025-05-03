@@ -13,5 +13,7 @@
 ?>
 
 <a href="services.php">Services</a>
+|
+<a href="experience.php">Experience</a>
 
 <p style="text-align:center;  "><?php echo  show_msg() ?></p>

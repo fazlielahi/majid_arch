@@ -1,5 +1,38 @@
 <?php
 
+    function get_experience($id){
+        global  $conn;
+        $all = array();
+
+        if($id == "all")
+        {
+            $experience_sql = "SELECT * FROM experience WHERE status = 1 ORDER BY id DESC";
+            $experience_query = mysqli_query($conn, $experience_sql);
+
+            while($experiences = mysqli_fetch_assoc($experience_query)){
+                array_push($all, $experiences);
+            }
+            return $all;
+        }else if($id == "all_experiences"){
+
+            $experience_sql = "SELECT * FROM experience ORDER BY id DESC";
+            $experience_query = mysqli_query($conn, $experience_sql);
+
+            while($experiences = mysqli_fetch_assoc($experience_query)){
+                array_push($all, $experiences);
+            }
+            return $all;
+
+        }else{
+                        
+            $experience_sql = "SELECT * FROM experience WHERE status = 1 AND id = $id";
+            $services_categ_query = mysqli_query($conn, $experience_sql);
+            $experience = mysqli_fetch_assoc($services_categ_query);
+
+            return $experience;
+        }
+    }
+
     function getservices_categ($id){
         global  $conn;
         $all = array();
@@ -38,7 +71,7 @@
             return $all;
          }else if($id == "all_services"){
 
-            $services_sql = "SELECT * FROM services WHERE status = 1 ORDER BY id DESC";
+            $services_sql = "SELECT * FROM services ORDER BY id DESC";
             $services_query = mysqli_query($conn, $services_sql);
 
             while($services = mysqli_fetch_assoc($services_query)){

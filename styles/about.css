@@ -353,6 +353,7 @@
     max-width: 50px;
     height: auto;
     margin-right: 15px;
+    border-radius: 100%;
   }
   
   .card-header .company-name {

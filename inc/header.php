@@ -7,7 +7,6 @@
       <a href="index.php">Home</a>
       <a href="services.php">Services</a>
       <a href="#">Portfolio</a>
-      <a href="cv.php">Resume</a>
       <a href="#" class="contact-btn" onclick="showContact()">Contact</a>
     </nav>
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
