@@ -13,6 +13,11 @@
     z-index: 1000;
   }
 
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+
   .logo img {
     width: 35px;
     margin: 8px 0;
@@ -21,7 +26,7 @@
   .logo::after {
     content: "mianmajid.arch";
     color: #444;
-    margin-top: 5px;
+    margin-top: -5px;
   }
 
   .nav-menu {
