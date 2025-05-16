@@ -14,8 +14,8 @@
   <link rel="canonical" href="https://www.yourdomain.com/" />
 
   <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Mian Majid Khan Architecture Studio" />

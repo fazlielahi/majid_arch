@@ -83,8 +83,8 @@
   <link rel="canonical" href="https://www.yourdomain.com/services.php">
 
   <!-- Favicons & Touch Icons -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="images/logo.png" sizes="180x180" href="/apple-touch-icon.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Our Professional Services | Mian Majid Khan Architecture">
